@@ -4,14 +4,16 @@ set -e
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 pushd $DIR
 
-./chromium/install.sh
-./chromium/base.sh
+./homebrew/osx_install.sh
+./homebrew/base.sh
 
-./iterm2/install.sh
+./chromium/osx_install.sh
 
-./sublime_text_2/install.sh
+./iterm2/osx_install.sh
 
-./adium/install.sh
+./sublime_text_2/osx_install.sh
+
+./adium/osx_install.sh
 
 popd
 
