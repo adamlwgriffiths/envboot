@@ -13,6 +13,11 @@ chmod +x "./$FILENAME"
 
 rm "./$FILENAME"
 
+# remove the crap shortcut
+if [ -f ~/Desktop/Launcher.app ]; then
+    rm "~/Desktop/Launcher.app"
+fi
+
 # copy in our bash script
 if [ -d ~/.bashrc_scripts ]; then
     cp ./bashrc_scripts/anaconda.sh ~/.bashrc_scripts
