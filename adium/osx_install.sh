@@ -7,7 +7,7 @@ pushd $DIR
 FILENAME="Adium_1.5.10.dmg"
 DMG="Adium 1.5.10"
 
-wget -O "./$FILENAME" "https://sourceforge.net/projects/adium/files/$FILENAME/download"
+wget -O "./$FILENAME" "https://sourceforge.net/projects/adium/files/$FILENAME/download" -c
 
 hdiutil mount "$FILENAME"
 

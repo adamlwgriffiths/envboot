@@ -7,7 +7,7 @@ pushd $DIR
 FILENAME="DropboxInstaller.dmg"
 DMG="Dropbox Installer"
 
-wget -O "./$FILENAME" "https://www.dropbox.com/download?src=index&plat=mac"
+wget -O "./$FILENAME" "https://www.dropbox.com/download?src=index&plat=mac" -c
 
 hdiutil mount "$FILENAME"
 

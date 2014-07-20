@@ -7,7 +7,7 @@ pushd $DIR
 FILENAME="Sublime Text 2.0.2.dmg"
 DMG="Sublime Text 2"
 
-wget -O "./$FILENAME" "http://c758482.r82.cf2.rackcdn.com/$FILENAME"
+wget -O "./$FILENAME" "http://c758482.r82.cf2.rackcdn.com/$FILENAME" -c
 
 hdiutil mount "$FILENAME"
 

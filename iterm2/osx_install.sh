@@ -7,7 +7,7 @@ pushd $DIR
 FILENAME="iTerm2_v2_0.zip"
 ZIP_DIR="iterm2"
 
-wget -O "$FILENAME" "http://www.iterm2.com/downloads/stable/$FILENAME"
+wget -O "$FILENAME" "http://www.iterm2.com/downloads/stable/$FILENAME" -c
 
 unzip -d "$ZIP_DIR" "$FILENAME"
 cd "$ZIP_DIR"

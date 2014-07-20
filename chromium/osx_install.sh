@@ -7,7 +7,7 @@ pushd $DIR
 FILENAME="ChromiumOSX_35.0.1916.153.dmg"
 DMG="Chromium OS X 35.0.1916.153"
 
-wget -O "./$FILENAME" "http://sourceforge.net/projects/osxportableapps/files/Chromium/$FILENAME/download"
+wget -O "./$FILENAME" "http://sourceforge.net/projects/osxportableapps/files/Chromium/$FILENAME/download" -c
 
 hdiutil mount "$FILENAME"
 
