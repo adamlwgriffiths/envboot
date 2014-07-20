@@ -7,6 +7,8 @@ pushd $DIR
 . ./homebrew/osx_install.sh
 . ./homebrew/base.sh
 
+. ./bash/osx_install.sh
+
 . ./chromium/osx_install.sh
 
 . ./iterm2/osx_install.sh
