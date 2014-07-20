@@ -5,9 +5,10 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 pushd $DIR
 
 . ./bash/osx_install.sh
+. ./bash/osx_base.sh
 
 . ./homebrew/osx_install.sh
-. ./homebrew/base.sh
+. ./homebrew/osx_base.sh
 
 . ./git/osx_install.sh
 
