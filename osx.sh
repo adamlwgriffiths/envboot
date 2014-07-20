@@ -4,12 +4,12 @@ set -e
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 pushd $DIR
 
+. ./bash/osx_install.sh
+
 . ./homebrew/osx_install.sh
 . ./homebrew/base.sh
 
 . ./git/osx_install.sh
-
-. ./bash/osx_install.sh
 
 . ./chromium/osx_install.sh
 

@@ -9,8 +9,10 @@ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 # brew doctor must be run first
 brew doctor
 
-mkdir -p ~/.bashrc_scripts
-cp ./bashrc_scripts/homebrew.sh ~/.bashrc_scripts
+if [ -d ~/.bashrc_scripts ]; then
+    cp ./bashrc_scripts/homebrew.sh ~/.bashrc_scripts
+    chmod +x ~/.bashrc_scripts/homebrew.sh
+fi
 
 popd
 
