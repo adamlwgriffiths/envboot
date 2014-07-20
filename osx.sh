@@ -25,6 +25,11 @@ pushd $DIR
 
 . ./python/osx_install.sh
 
+. ./heroku/osx_install.sh
+
+. ./foreman/osx_install.sh
+
+
 if [[ $REQUIRES_RESTART -eq 1 ]]; then
 	echo ""
 	echo "One or more installations require a restart"
