@@ -15,5 +15,7 @@ pushd $DIR
 
 ./adium/osx_install.sh
 
+./virtual_box/osx_install.sh
+
 popd
 
