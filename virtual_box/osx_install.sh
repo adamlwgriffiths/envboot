@@ -30,5 +30,7 @@ VBoxManage extpack install "./$FILENAME"
 
 rm "./$FILENAME"
 
+export REQUIRES_RESTART=1
+
 popd
 
