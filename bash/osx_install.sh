@@ -8,5 +8,8 @@ pushd $DIR
 cp ./.bashrc ~
 mkdir -p ~/.bashrc_scripts
 
+# link .bash_profile to .bashrc
+ln -s ~/.bashrc ~/.bash_profile
+
 popd
 
