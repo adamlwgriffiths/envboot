@@ -1,0 +1,32 @@
+EnvBoot
+=======
+
+Quickly set up working environments on new systems.
+
+Software
+--------
+
+ * Adium (https://adium.im/)
+ * Anaconda (https://store.continuum.io/cshop/anaconda/)
+ * Modular Bash
+ * Chromium (http://www.freesmug.org/chromium)
+ * Condawrapper (https://github.com/adamlwgriffiths/condawrapper)
+ * DropBox (https://dropbox.com)
+ * Foreman (https://github.com/ddollar/foreman)
+ * Git (http://www.git-scm.com/)
+ * Heroku-toolbelt (https://toolbelt.heroku.com)
+ * Homebrew (http://brew.sh/)
+ * iTerm2 (http://iterm2.com/)
+ * Ruby (https://www.ruby-lang.org/en/)
+ * SublimeText2 (http://www.sublimetext.com/)
+ * VirtualBox (https://www.virtualbox.org)
+
+
+```
+# OS-X
+wget -q0- -O envboot.zip https://github.com/adamlwgriffiths/envboot/archive/master.zip && unzip envboot.zip && rm envboot.zip && cd envboot && ./osx.sh
+
+# Ubuntu
+wget -q0- -O envboot.zip https://github.com/adamlwgriffiths/envboot/archive/master.zip && unzip envboot.zip && rm envboot.zip && cd envboot && ./ubuntu.sh
+```
+
