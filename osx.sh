@@ -26,6 +26,8 @@ pushd $DIR
 
 . ./python/osx_install.sh
 
+. ./condawrapper/osx_install.sh
+
 . ./heroku/osx_install.sh
 
 . ./foreman/osx_install.sh
