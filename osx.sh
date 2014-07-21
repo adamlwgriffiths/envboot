@@ -10,6 +10,8 @@ pushd $DIR
 . ./homebrew/osx_install.sh
 . ./homebrew/osx_base.sh
 
+. ./vim/osx_install.sh
+
 . ./git/osx_install.sh
 
 . ./chromium/osx_install.sh

@@ -5,6 +5,8 @@ pushd $DIR
 
 . ./bash/ubuntu_install.sh
 
+. ./vim/ubuntu_install.sh
+
 . ./git/ubuntu_install.sh
 
 . ./anaconda/ubuntu_install.sh
