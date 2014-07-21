@@ -8,13 +8,15 @@ if [ -f ~/.bashrc ]; then
     mv ~/.bashrc ~/.bashrc.bak
 fi
 cp ./.bashrc ~/.bashrc
-mkdir -p ~/.bash_scripts
+chmod +x ~/.bashrc
 
 # link .bash_profile to .bashrc
 if [ -f ~/.bash_profile ]; then
     mv ~/.bash_profile ~/.bash_profile.bak
 fi
 ln -s ~/.bashrc ~/.bash_profile
+
+mkdir -p ~/.bash_scripts
 
 popd
 
