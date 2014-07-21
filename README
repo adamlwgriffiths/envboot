@@ -22,11 +22,9 @@ Software
  * VirtualBox (https://www.virtualbox.org)
 
 
-```
-# OS-X
-wget -q0- -O envboot.zip https://github.com/adamlwgriffiths/envboot/archive/master.zip && unzip envboot.zip && rm envboot.zip && cd envboot && ./osx.sh
-
-# Ubuntu
-wget -q0- -O envboot.zip https://github.com/adamlwgriffiths/envboot/archive/master.zip && unzip envboot.zip && rm envboot.zip && cd envboot && ./ubuntu.sh
-```
+    # OS-X
+    wget -q0- -O envboot.zip https://github.com/adamlwgriffiths/envboot/archive/master.zip && unzip envboot.zip && rm envboot.zip && cd envboot && ./osx.sh
+    
+    # Ubuntu
+    wget -q0- -O envboot.zip https://github.com/adamlwgriffiths/envboot/archive/master.zip && unzip envboot.zip && rm envboot.zip && cd envboot && ./ubuntu.sh
 
