@@ -12,9 +12,9 @@ if [ ! -d ~/Workspace/condawrapper ]; then
     popd
 fi
 
-if [ -d ~/.bashrc_scripts ]; then
-    cp ./bashrc_scripts/condawrapper.sh ~/.bashrc_scripts
-    chmod +x ~/.bashrc_scripts/condawrapper.sh
+if [ -d ~/.bash_scripts ]; then
+    cp ./bash_scripts/condawrapper.sh ~/.bash_scripts
+    chmod +x ~/.bash_scripts/condawrapper.sh
 fi
 
 popd

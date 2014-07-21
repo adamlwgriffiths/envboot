@@ -8,7 +8,7 @@ if [ -f ~/.bashrc ]; then
     mv ~/.bashrc ~/.bashrc.bak
 fi
 cp ./.bashrc ~/.bashrc
-mkdir -p ~/.bashrc_scripts
+mkdir -p ~/.bash_scripts
 
 # link .bash_profile to .bashrc
 if [ -f ~/.bash_profile ]; then
