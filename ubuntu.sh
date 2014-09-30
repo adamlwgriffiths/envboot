@@ -3,9 +3,8 @@ set -e
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 pushd $DIR
 
-. ./bash/ubuntu_bash.sh
-
 . ./bash/ubuntu_install.sh
+. ./bash/ubuntu_base.sh
 
 . ./vim/ubuntu_install.sh
 
