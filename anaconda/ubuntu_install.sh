@@ -14,9 +14,9 @@ chmod +x "./$FILENAME"
 rm "./$FILENAME"
 
 # copy in our bash script
-if [ -d ~/.bashrc_scripts ]; then
-    cp ./bashrc_scripts/anaconda.sh ~/.bashrc_scripts
-    chmod +x ~/.bashrc_scripts/anaconda.sh
+if [ -d ~/.bash_scripts ]; then
+    cp ./bash_scripts/anaconda.sh ~/.bash_scripts
+    chmod +x ~/.bash_scripts/anaconda.sh
 fi
 
 popd
