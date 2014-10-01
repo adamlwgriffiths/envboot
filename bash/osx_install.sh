@@ -4,19 +4,26 @@ set -e
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 pushd $DIR
 
+mkdir -p ~/.bash_scripts
+
 if [ -f ~/.bashrc ]; then
-    mv ~/.bashrc ~/.bashrc.bak
+    # don't nuke existing backups
+    if [ ! -f ~/.bashrc.bak ]; then
+        mv ~/.bashrc ~/.bashrc.bak
+    fi
 fi
 cp ./.bashrc ~/.bashrc
 chmod +x ~/.bashrc
 
 # link .bash_profile to .bashrc
 if [ -f ~/.bash_profile ]; then
-    mv ~/.bash_profile ~/.bash_profile.bak
+    # don't nuke existing backups
+    if [ ! -f ~/.bash_profile.bak ]; then
+        mv ~/.bash_profile ~/.bash_profile.bak
+    fi
 fi
 ln -s ~/.bashrc ~/.bash_profile
 
-mkdir -p ~/.bash_scripts
 
 popd
 
