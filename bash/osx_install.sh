@@ -11,6 +11,10 @@ if [ -f ~/.bashrc ]; then
     if [ ! -f ~/.bashrc.bak ]; then
         mv ~/.bashrc ~/.bashrc.bak
     fi
+    if [ ! -f ~/.bash_scripts/bashrc.sh ]; then
+        cp ~/.bashrc ~/.bash_scripts/bashrc.sh
+        chmod +x ~/.bash_scripts/bashrc.sh
+    fi
 fi
 cp ./.bashrc ~/.bashrc
 chmod +x ~/.bashrc
