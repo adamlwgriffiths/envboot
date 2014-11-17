@@ -16,7 +16,7 @@ if [ -f ~/.bashrc ]; then
         chmod +x ~/.bash_scripts/bashrc.sh
     fi
 fi
-cp ./.bashrc ~/.bashrc
+cp ./bashrc ~/.bashrc
 chmod +x ~/.bashrc
 
 # link .bash_profile to .bashrc
@@ -25,6 +25,7 @@ if [ -f ~/.bash_profile ]; then
     if [ ! -f ~/.bash_profile.bak ]; then
         mv ~/.bash_profile ~/.bash_profile.bak
     fi
+    rm ~/.bash_profile
 fi
 ln -s ~/.bashrc ~/.bash_profile
 
